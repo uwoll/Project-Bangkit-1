@@ -1,0 +1,303 @@
+body {
+    background-color: white;
+  }
+
+  .jumbotron {
+    font-size: 30px;
+    padding: 1px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    overflow: hidden;
+  }
+  
+  .jumbotron .text{
+    position: relative;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .text.sec-text:before{
+    content: "";
+    position: absolute;
+    font-family: "Kanit", sans-serif;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    border-left: 2px solid black;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(209, 28, 28);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-inline: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    display: block;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+    color: black;
+    text-align: center;
+    margin-left: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #F8EDE3;
+    margin-left: 20px;
+  }
+  
+  .dropdown {
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(209, 28, 28);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #F8EDE3;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: white;
+    font-family: "Kanit", system-ui;
+    font-weight: 400;
+    justify-content: center;
+    font-style: normal;
+    display: flex;
+    gap: 1.5rem;
+    color: #333;
+    text-align: justify;
+  }
+
+    article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:whitesmoke;
+    margin-top: 20px;
+}
+
+  footer {
+    font-family: "Kanit", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(209, 28, 28);
+  }
+
+  aside {
+    display: flex;
+    width: 25%;
+    flex: 1,5;
+    justify-content: center;
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .sidebar {
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    align-content: center;
+    background-color: white;
+  }
+
+  #content {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 5;
+    gap: 1rem 2rem;
+  }
+
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+ 
+    .wrapper {
+    width: 75%;
+  }
+
+
+  #content{
+    align-self: center;
+  }
+  main aside {
+    align-self: center;
+    width: 75%;
+  }
+}
+ 
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    width: 100%;
+  }
+ 
+  .wrapper {
+    width: 75%;
+  }
+
+
+  #content{
+    align-self: center;
+  }
+
+  main aside {
+    align-self: center;
+    width: 75%;
+  }
+}
+.wrapper {
+  width: 100%px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  transition: margin-left 2s;
+}
+
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+#slide1:target ~ .slider {
+  margin-left: 0px;
+}
+
+#slide2:target ~ .slider {
+  margin-left: -100%;
+}
+
+#slide3:target ~ .slider {
+  margin-left: -200%;
+}
+
+.navigation a {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  font-size: 0px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin: 4px;
+  transition: 1s;
+}
+
+.navigation a:hover {
+  background-color: red;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  opacity: 50%;
+  padding-bottom: 25px;
+}
+

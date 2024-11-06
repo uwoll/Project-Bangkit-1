@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Windah Basudara</title>
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Windah Basudara</h1>
+            <span class="text first-text"></span>
+            <span class="text sec-text">Youtuber</span>
+        </div>
+
+        <script>
+          const text = document.querySelector(".sec-text");
+          const textLoad = () => {
+              setTimeout(() => {
+                  text.textContent = "YouTuber";
+              }, 0);
+              setTimeout(() => {
+                  text.textContent = "Streamer";
+              }, 4000);
+              setTimeout(() => {
+                  text.textContent = "Vlogger";
+              }, 8000);
+          }
+          textLoad();
+          setInterval(textLoad, 12000);
+      </script>    
+
+        <nav class="navbar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pembicaraan</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">Daftar isi
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#kehidupan">Kehidupan</a>
+                    <a href="#karier">Karier</a>
+                    <a href="#filmografi">Filmografi</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <div id="content">
+        <article id="kehidupan">
+            <h2>Kehidupan</h2>
+            <p><strong>Brando Franco Windah</strong> (lahir 14 Maret 1992), secara profesional dikenal sebagai <strong>Windah Basudara</strong> merupakan seorang kreator konten dan penyiar langsung asal Indonesia. Ia dikenal karena melakukan siaran langsung pada permainan video di YouTube. Ia juga dikenal berkat istilah "<strong>Bocil Kematian</strong>" yang digunakan untuk menyebut penggemarnya.</p>
+            <p>Brando Franco Windah lahir pada <span style="color: blue;">14 Maret 1992 di Manado, Sulawesi Utara</span>, merupakan anak kedua dari 4 bersaudara. Dia memiliki dua saudari, <strong>Florence Windah dan Caroline Windah</strong>, dan seorang adik laki-laki, <strong>Vincent Windah</strong>. Ketika dia masih di taman kanak-kanak, keluarganya memutuskan untuk pindah dan menetap di Jakarta di mana dia menghabiskan tahun-tahun pembentukannya. Ia bersekolah di SD Santo Vincentius, SMP Marsudirini dan SMA Santo Bellarminus.</p>
+        </article>
+
+        <article id="karier">
+            <h2>Karier</h2>
+            <p><strong>Windah Basudara</strong> memulai karier YouTube-nya pada <span style="color: red;">29 Desember 2018</span>. Dia mengulas banyak genre permainan di kanal YouTube-nya. Mulai dari Permainan Bermain Peran (RPG), Aksi, Strategi Waktu Nyata (RTS), Permainan Balap, Permainan Petualangan, dan masih banyak lagi. Dia juga dikenal karena akting yang biasanya dia lakukan selama atau di akhir siaran langsungnya, sebagai bagian dari kepribadiannya yang unik. Ia mengatakan, pertunjukan tersebut merupakan salah satu bentuk gimik untuk menghibur dan diharapkan dapat menarik lebih banyak penonton. Dia juga mengatakan bahwa dia menghabiskan jutaan untuk pakaian dan barang lain-lain.</p>
+        </article>
+
+        <article id="filmografi">
+            <h2>Filmografi</h2>
+            <p>Pada  <span style="color: blue;">18 November 2021 pukul 18.30 WIB</span>, GTV mempersembahkan Indonesian Esports Awards 2021. Penghargaan tersebut memberikan penghargaan kepada para pemain Esport dan Youtuber Indonesia terbaik dengan menganugerahkan nominasi berdasarkan hasil pemungutan suara publik. Indonesia Esports Awards 2021 dilakukan melalui survei Ambatukam daring, karena penyebaran virus corona. Pemungutan suara diadakan pada 20 Oktober hingga 18 November 2021. Windah Basudara berhasil mengumpulkan suara terbanyak untuk memenangkan Most Favorite Gaming Content Creator of 2021, meskipun persaingan ketat di empat nominasi lainnya: <i>Dyland Pros, Jess No Limit, Jonathan Liandi dan Oura Gaming</i>.</p>
+        </article>
+        </div>
+
+        <aside>
+            <article>
+                <header>
+                    <h2>Windah Basudara</h2>
+                    <figure>
+                        <img src="style/gambar/windah.jpeg" class="featured-image">
+                    </figure>
+                </header>
+                <section>
+                    <h3>Informasi pribadi</h3>
+                    <table class="sidebar">
+                        <tr>
+                            <th>Nama, Tempat dan Tanggal Lahir</th>
+                            <td>Brando Franco Windah 14 Maret 1992 (umur 32) Manado, Sulawesi Utara</td>
+                        </tr>
+                        <tr>
+                            <th>Negara</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Pekerjaan</th>
+                            <td>Content Creator <br>Streamer <br>Vlogger</td>
+                        </tr>
+                    </table>
+                    <h3>Informasi YouTube</h3>
+                    <table class="sidebar">
+                        <tr>
+                            <th>Kanal</th>
+                            <td><a href="https://www.youtube.com/@WindahBasudara">Windah Basudara</a></td>
+                        </tr>
+                        <tr>
+                            <th>Nama Fans</th>
+                            <td>Bocil Kematian</td>
+                        </tr>
+                        <tr>
+                            <th>Tahun aktif</th>
+                            <td>2018 - Sekarang</td>
+                        </tr>
+                        <tr>
+                            <th>Genre</th>
+                            <td>Streamer <br>Komedi</td>
+                        </tr>
+                        <tr>
+                            <th>Pelanggan</th>
+                            <td>14 Juta (6/09/2024)</td>
+                        </tr>
+                        <tr>
+                            <th>Total tayang</th>
+                            <td>3,8 Milliar (6/09/2024)</td>
+                        </tr>
+                    </table>
+                </section>
+
+                
+    <div class="wrapper">
+        <div class="slides">
+            <span id="slide1"></span>
+            <span id="slide2"></span>
+            <span id="slide3"></span>
+
+            <div class="slider">
+                <img src="style/gambar/windah1.jpg">
+                <img src="style/gambar/windah2.jpg">
+                <img src="style/gambar/windah3.jpeg">
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="navigation">
+        <a href="#slide1">1</a>
+        <a href="#slide2">2</a>
+        <a href="#slide3">3</a>
+    </div>
+
+            </article>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2024, by Shadiq Widi Putra</p>
+    </footer>
+</body>
+</html>
